@@ -1,0 +1,93 @@
+body {
+    margin: 0; /* Remove default body margin */
+}
+
+.header{
+    display: flex;
+    font-family: sans-serif;
+    color: #e3d7ab;
+    justify-content: center;
+    background-color: #43281c;
+    font-size: large;
+    width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.items h2.order-section{
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.items.order-section{
+    background-color: #eee1d5;
+    box-shadow: -0.3px 0.5px 2px #885a2d;
+    border-radius: 7px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.items.order-section h2{
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+
+.order{
+    font-weight: bold;
+    list-style: none;
+}
+
+.ingredientes{
+    font-weight: normal;
+    color: #d7c0ad;
+    list-style: none;
+}
+
+.orders-grid{
+    display: grid
+
+}
+
+.item-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-flex .qnt{
+    flex-grow: 0.3;
+    width: 0;
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+
+}
+
+.item-flex .item-title{
+    flex-grow: 9;
+}
+
+.item-flex .item-price{
+    flex-grow: 0.4;
+}
+
+
+.order > li{
+    position: relative;
+    padding: 5px
+}
+
+.order li ul{
+    margin: 3px
+}
+
+.order > li:not(:last-child)::after{
+    content: "";
+    border-bottom: 1px solid #e4cbb1; /* Adjust color and style as needed */
+    width: 100%; /* Adjust the width of the line as needed */
+    position: absolute;
+    margin-left: -1%;
+    bottom: 0;
+}
